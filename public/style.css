@@ -1,0 +1,1701 @@
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #191919;
+  margin: 0;
+  color: #fff;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type='checkbox'] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type='radio'] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type='search'] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p-header {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between;
+  height: 190px;
+  background: #191919;
+  color: #fff;
+}
+
+.p-header__wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.p-header__hero {
+  position: relative;
+}
+
+.p-header__hero > h1 {
+  position: absolute;
+  left: 2vw;
+  top: 0;
+  font-size: 80px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.p-header__navs {
+  display: flex;
+  height: 106px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 84px;
+}
+
+.p-header__navs__list {
+  display: flex;
+  margin-right: 1.5vw;
+  font-size: 22.5px;
+  font-weight: 400;
+}
+
+.p-header__navs__list > li {
+  padding: 0 1.5vw;
+}
+
+.p-header__navs__logo {
+  padding: 0 10px 50px;
+  background-image: url(./images/CINEMETA\ 0113_工作區域\ 1.png);
+  height: 80px;
+  width: 70px;
+  background-size: 450%;
+  background-position: 50% 37.75%;
+}
+
+.p-header__navs__logo > div::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.p-main {
+  padding-top: 190px;
+  z-index: 0;
+}
+
+.p-main__mainVisual {
+  background-image: url(./images/noah-morgan-Fs968s8maEQ-unsplash.jpg);
+  height: 78.25vh;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background-position: 0% 85%;
+  background-size: cover;
+  margin-bottom: 15%;
+}
+
+.p-main__mainVisual__massage {
+  width: 29.25%;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+}
+
+.p-main__mainVisual__massage > p {
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+}
+
+.p-main__mainVisual__massage > p::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+  top: -0.5px;
+  left: -25px;
+  border-radius: 10px;
+}
+
+.p-main__roadmap__head {
+  background-image: url(./images/siwi-pratiwi-SyNTSFbiKvg-unsplash.jpg);
+  display: flex;
+  width: 100%;
+  height: 26.58vh;
+  justify-content: space-evenly;
+  background-size: 100%;
+  background-position: 85% 50%;
+  align-items: center;
+}
+
+.p-main__roadmap__head__title {
+  font-size: 11.4vh;
+}
+
+.p-main__roadmap__head__description {
+  font-size: 3.79vh;
+  line-height: 4.43vh;
+  text-align: justify;
+  width: 46%;
+}
+
+.p-main__roadmap__upper {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  height: 67.7vh;
+  margin-top: 7%;
+}
+
+.p-main__roadmap__upper__content {
+  position: relative;
+}
+
+.p-main__roadmap__1 {
+  position: absolute;
+  top: 3.16vh;
+}
+
+.p-main__roadmap__2 {
+  position: absolute;
+  top: 31.6vh;
+  left: 27.8vw;
+}
+
+.p-main__roadmap__upper__image::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 95%;
+  width: 24.3vw;
+  background-color: #ffe600;
+  z-index: -1;
+  top: 3.15vh;
+}
+
+.p-main__roadmap__upper__image::after {
+  content: '';
+  display: block;
+  background-image: url(./images/rick-davis-Nd-ptAdv-hY-unsplash.jpg);
+  height: 95%;
+  width: 24.3vw;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-left: 3vw;
+}
+
+.p-main__roadmap__lower {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  height: 67.7vh;
+  margin-top: 10%;
+}
+
+.p-main__roadmap__lower__content {
+  position: relative;
+  order: -1;
+}
+
+.p-main__roadmap__lower__image::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 95%;
+  width: 24.3vw;
+  background-color: #ffe600;
+  z-index: -1;
+  top: 3.15vh;
+}
+
+.p-main__roadmap__lower__image {
+  order: 1;
+}
+
+.p-main__roadmap__lower__image::after {
+  content: '';
+  display: block;
+  background-image: url(./images/gryffyn-m-v9KRRdTN7rY-unsplash.jpg);
+  height: 95%;
+  width: 24.3vw;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-left: -3vw;
+}
+
+.p-main__roadmap__3 {
+  position: absolute;
+  top: 3.16vh;
+}
+
+.p-main__roadmap__4 {
+  position: absolute;
+  top: 30vh;
+  left: 27.8vw;
+}
+
+.p-main__aboutUs {
+  height: 57vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9.25%;
+  margin-bottom: 7.5%;
+}
+
+.p-main__aboutUs__logo {
+  background-image: url(./images/CINEMETA\ 0113_工作區域\ 1.png);
+  background-position: center;
+  background-size: 135%;
+  width: 24.3vw;
+  height: 80%;
+  margin-top: 3.8vh;
+  margin-left: 3%;
+}
+
+.p-main__aboutUs__content {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.p-main__aboutUs__head {
+  font-size: 9.81vh;
+  font-weight: 700;
+}
+
+.p-main__aboutUs__body1 {
+  font-size: 3.54vh;
+}
+
+.p-main__aboutUs__body2 {
+  font-size: 2.5vh;
+  line-height: 3.45vh;
+  font-weight: 100;
+  width: 95%;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.p-main__artist {
+  height: 62vh;
+}
+
+.p-main__artist__message {
+  text-align: center;
+  font-size: 5vh;
+  font-weight: 800;
+  padding-top: 28.5vh;
+}
+
+.p-footer {
+  height: 100px;
+  position: relative;
+  background-image: url(./images/noah-morgan-kxkXVlNL7H0-unsplash.jpg);
+  background-size: cover;
+  margin-top: 2.25%;
+}
+
+.p-footer__icons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.p-footer__icons__box {
+  width: 68px;
+  background: #000;
+  margin: 0 15px;
+  border-radius: 15px;
+}
+
+.p-footer__icons__box::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.p-footer__copyright {
+  color: rgb(202, 202, 202);
+  position: absolute;
+  left: 2%;
+  font-size: 17.5px;
+  bottom: 0.5%;
+}
+
+.p-footer__logo__img {
+  position: absolute;
+  background-image: url(./images/CINEMETA\ 0113_工作區域\ 1.png);
+  width: 90px;
+  height: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-size: 200%;
+  background-position: 50% 40%;
+}
+
+.p-footer__logoImg::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #ffe600;
+}
+
+.instagram__icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23f5db47%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2025%2025%22%20width%3D%2250px%22%20height%3D%2250px%22%3E%20%3Cpath%20d%3D%22M%208%203%20C%205.243%203%203%205.243%203%208%20L%203%2016%20C%203%2018.757%205.243%2021%208%2021%20L%2016%2021%20C%2018.757%2021%2021%2018.757%2021%2016%20L%2021%208%20C%2021%205.243%2018.757%203%2016%203%20L%208%203%20z%20M%208%205%20L%2016%205%20C%2017.654%205%2019%206.346%2019%208%20L%2019%2016%20C%2019%2017.654%2017.654%2019%2016%2019%20L%208%2019%20C%206.346%2019%205%2017.654%205%2016%20L%205%208%20C%205%206.346%206.346%205%208%205%20z%20M%2017%206%20A%201%201%200%200%200%2016%207%20A%201%201%200%200%200%2017%208%20A%201%201%200%200%200%2018%207%20A%201%201%200%200%200%2017%206%20z%20M%2012%207%20C%209.243%207%207%209.243%207%2012%20C%207%2014.757%209.243%2017%2012%2017%20C%2014.757%2017%2017%2014.757%2017%2012%20C%2017%209.243%2014.757%207%2012%207%20z%20M%2012%209%20C%2013.654%209%2015%2010.346%2015%2012%20C%2015%2013.654%2013.654%2015%2012%2015%20C%2010.346%2015%209%2013.654%209%2012%20C%209%2010.346%2010.346%209%2012%209%20z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.tiktok__icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2255%22%20height%3D%2255%22%20viewBox%3D%220%200%20256%20256%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdesc%3ECreated%20with%20Fabric.js%201.7.22%3C%2Fdesc%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cg%20transform%3D%22translate(128%20128)%20scale(0.5%200.5)%22%20style%3D%22%22%3E%20%3Cg%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%200%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20none%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22translate(-255.15%20-255.15000000000006)%20scale(5.67%205.67)%22%20%3E%20%3Cpath%20d%3D%22M%2036.203%2035.438%20v%20-3.51%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-15.047%200%20-27.289%2012.244%20-27.289%2027.291%20c%200%209.23%204.613%2017.401%2011.65%2022.342%20c%20-4.712%20-5.039%20-7.332%20-11.681%20-7.328%20-18.58%20C%209.559%2047.88%2021.453%2035.784%2036.203%2035.438%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2036.847%2075.175%20c%206.714%200%2012.19%20-5.341%2012.44%20-11.997%20l%200.023%20-59.417%20h%2010.855%20c%20-0.232%20-1.241%20-0.349%20-2.5%20-0.35%20-3.762%20H%2044.989%20l%20-0.025%2059.419%20c%20-0.247%206.654%20-5.726%2011.993%20-12.438%2011.993%20c%20-2.015%200.001%20-4%20-0.49%20-5.782%20-1.431%20C%2029.079%2073.238%2032.839%2075.171%2036.847%2075.175%20M%2080.441%2023.93%20v%20-3.302%20c%20-3.989%200.004%20-7.893%20-1.157%20-11.232%20-3.339%20c%202.928%203.371%206.869%205.701%2011.234%206.641%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2069.209%2017.286%20c%20-3.272%20-3.744%20-5.075%20-8.549%20-5.073%20-13.522%20h%20-3.972%20C%2061.203%209.318%2064.472%2014.205%2069.209%2017.286%20M%2032.526%2046.486%20c%20-6.88%200.008%20-12.455%205.583%20-12.463%2012.463%20c%200.004%204.632%202.576%208.88%206.679%2011.032%20c%20-1.533%20-2.114%20-2.358%20-4.657%20-2.358%20-7.268%20c%200.007%20-6.88%205.582%20-12.457%2012.463%20-12.465%20c%201.284%200%202.515%200.212%203.677%200.577%20V%2035.689%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-0.216%200%20-0.429%200.012%20-0.643%200.016%20v%2011.626%20C%2035.014%2046.685%2033.774%2046.49%2032.526%2046.486%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2080.441%2023.93%20v%2011.523%20c%20-7.689%200%20-14.81%20-2.459%20-20.627%20-6.633%20v%2030.13%20c%200%2015.047%20-12.24%2027.289%20-27.287%2027.289%20c%20-5.815%200%20-11.207%20-1.835%20-15.639%20-4.947%20c%205.151%205.555%2012.384%208.711%2019.959%208.709%20c%2015.047%200%2027.289%20-12.242%2027.289%20-27.287%20v%20-30.13%20c%206.009%204.321%2013.226%206.642%2020.627%206.633%20V%2024.387%20c%20-1.484%200%20-2.927%20-0.161%20-4.323%20-0.46%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2059.813%2058.949%20v%20-30.13%20c%206.009%204.322%2013.226%206.642%2020.627%206.633%20V%2023.93%20c%20-4.364%20-0.941%20-8.305%20-3.272%20-11.232%20-6.644%20c%20-4.737%20-3.081%20-8.006%20-7.968%20-9.045%20-13.522%20H%2049.309%20l%20-0.023%2059.417%20c%20-0.249%206.654%20-5.726%2011.995%20-12.44%2011.995%20c%20-4.007%20-0.004%20-7.768%20-1.938%20-10.102%20-5.194%20c%20-4.103%20-2.151%20-6.676%20-6.399%20-6.681%20-11.032%20c%200.008%20-6.88%205.583%20-12.455%2012.463%20-12.463%20c%201.282%200%202.513%200.21%203.677%200.577%20V%2035.438%20C%2021.453%2035.784%209.559%2047.88%209.559%2062.713%20c%200%207.173%202.787%2013.703%207.328%2018.58%20c%204.578%203.223%2010.041%204.95%2015.639%204.945%20C%2047.574%2086.238%2059.813%2073.996%2059.813%2058.949%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C230%2C0)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.discord__icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23f5db47%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2250px%22%20height%3D%2250px%22%3E%20%3Cpath%20d%3D%22M19.952%2C5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392%2C0.097-0.474%2C0.281%20c-0.006%2C0.012-0.072%2C0.163-0.145%2C0.398c1.259%2C0.212%2C2.806%2C0.64%2C4.206%2C1.509c0.224%2C0.139%2C0.293%2C0.434%2C0.154%2C0.659%20c-0.09%2C0.146-0.247%2C0.226-0.407%2C0.226c-0.086%2C0-0.173-0.023-0.252-0.072C15.584%2C5.38%2C12.578%2C5.305%2C12%2C5.305S8.415%2C5.38%2C6.011%2C6.872%20c-0.225%2C0.14-0.519%2C0.07-0.659-0.154c-0.14-0.225-0.07-0.519%2C0.154-0.659c1.4-0.868%2C2.946-1.297%2C4.206-1.509%20c-0.074-0.236-0.14-0.386-0.145-0.398C9.484%2C3.968%2C9.294%2C3.852%2C9.092%2C3.872c-0.127%2C0.01-3.139%2C0.269-5.069%2C1.822%20C3.015%2C6.625%2C1%2C12.073%2C1%2C16.783c0%2C0.083%2C0.022%2C0.165%2C0.063%2C0.237c1.391%2C2.443%2C5.185%2C3.083%2C6.05%2C3.111c0.005%2C0%2C0.01%2C0%2C0.015%2C0%20c0.153%2C0%2C0.297-0.073%2C0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675%20c0.175-0.198%2C0.476-0.217%2C0.674-0.043c0.029%2C0.026%2C2.248%2C1.909%2C6.612%2C1.909c4.372%2C0%2C6.591-1.891%2C6.613-1.91%20c0.198-0.172%2C0.5-0.154%2C0.674%2C0.045c0.174%2C0.198%2C0.155%2C0.499-0.042%2C0.673c-0.07%2C0.062-1.275%2C1.096-3.634%2C1.706l0.875%2C1.202%20c0.09%2C0.124%2C0.234%2C0.197%2C0.387%2C0.197c0.005%2C0%2C0.01%2C0%2C0.015%2C0c0.865-0.027%2C4.659-0.667%2C6.05-3.111%20C22.978%2C16.947%2C23%2C16.866%2C23%2C16.783C23%2C12.073%2C20.985%2C6.625%2C19.952%2C5.672z%20M8.891%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913s1.674%2C0.857%2C1.674%2C1.913S9.816%2C14.87%2C8.891%2C14.87z%20M15.109%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913c0.924%2C0%2C1.674%2C0.857%2C1.674%2C1.913S16.033%2C14.87%2C15.109%2C14.87z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook__icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23f5db47%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%20width%3D%2255px%22%20height%3D%2255px%22%3E%20%3Cpath%20d%3D%22M32%2C11h5c0.552%2C0%2C1-0.448%2C1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484%2C2.153%2C32.376%2C2%2C30.141%2C2C24%2C2%2C20%2C5.68%2C20%2C12.368%20V19h-7c-0.552%2C0-1%2C0.448-1%2C1v7c0%2C0.552%2C0.448%2C1%2C1%2C1h7v19c0%2C0.552%2C0.448%2C1%2C1%2C1h7c0.552%2C0%2C1-0.448%2C1-1V28h7.222%20c0.51%2C0%2C0.938-0.383%2C0.994-0.89l0.778-7C38.06%2C19.518%2C37.596%2C19%2C37%2C19h-8v-5C29%2C12.343%2C30.343%2C11%2C32%2C11z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-main__roadmap__content {
+  width: 54.8vw;
+  height: 92.5%;
+}
+
+.c-main__roadmap__content-itself {
+  width: 27.08vw;
+}
+
+.c-main__roadmap__content__head {
+  content: '';
+  display: block;
+  height: 15vh;
+  width: 100%;
+  border-radius: 17px;
+  background-color: #ffe600;
+  color: #000;
+  text-align: center;
+  font-size: 7.6vh;
+}
+
+.c-main__roadmap__content__head > h3 {
+  line-height: 15.2vh;
+}
+
+.c-main__roadmap__content__body {
+  content: '';
+  display: block;
+  height: 12.5vh;
+  width: 97.25%;
+  margin: 0 auto;
+  line-height: 3.65vh;
+  padding: 2.53vh 1.38vw;
+  font-size: 2.75vh;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1063px) {
+  .p-header {
+    display: block;
+    height: 190px;
+  }
+  .p-header__hero {
+    display: none;
+  }
+
+  .p-header__navs {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 80%;
+    height: 150px;
+    margin-top: 2.5%;
+  }
+
+  .p-header__navs__nav {
+    order: 1;
+  }
+
+  .p-header__navs__list {
+    display: flex;
+    margin-right: 0;
+    font-size: 17.5px;
+    font-weight: 400;
+  }
+
+  .p-header__navs__logo {
+    padding: 0;
+    background-image: url(./images/CINEMETA\ 0113_工作區域\ 1\ 複本.png);
+    height: 125px;
+    width: 300px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    order: 0;
+  }
+
+  .p-main {
+    padding-top: 190px;
+    z-index: 0;
+  }
+
+  .p-main__mainVisual {
+    background-image: url(./images/noah-morgan-Fs968s8maEQ-unsplash.jpg);
+    height: 35vh;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background-position: 0% 85%;
+    background-size: cover;
+    margin-bottom: 10%;
+  }
+
+  .p-main__mainVisual__massage {
+    width: 29.25%;
+    position: absolute;
+    right: 0;
+    bottom: 8%;
+  }
+
+  .p-main__mainVisual__massage > p {
+    position: relative;
+    font-size: 17.5px;
+    color: #fff;
+  }
+
+  .p-main__mainVisual__massage > p::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+    top: -0.5px;
+    left: -25px;
+    border-radius: 10px;
+  }
+
+  .p-main__roadmap__head {
+    background-image: url(./images/siwi-pratiwi-SyNTSFbiKvg-unsplash.jpg);
+    display: flex;
+    width: 100%;
+    height: 13.5vmax;
+    justify-content: space-evenly;
+    background-size: 100%;
+    background-position: 85% 50%;
+    align-items: center;
+  }
+
+  .p-main__roadmap__head__title {
+    font-size: 3.66vh;
+  }
+
+  .p-main__roadmap__head__description {
+    font-size: 1.28vh;
+    line-height: 1.64vh;
+    text-align: justify;
+    width: 46%;
+  }
+
+  .p-main__roadmap__upper {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    height: 30vh;
+    margin-top: 10%;
+  }
+
+  .p-main__roadmap__upper__content {
+    position: relative;
+    order: -1;
+  }
+
+  .p-main__roadmap__1 {
+    position: absolute;
+    top: 3vh;
+  }
+
+  .p-main__roadmap__2 {
+    position: absolute;
+    top: 17.5vh;
+    left: 19.5vw;
+  }
+
+  .p-main__roadmap__upper__image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 95%;
+    width: 24.3vw;
+    background-color: #ffe600;
+    z-index: -1;
+    top: 3.15vh;
+    right: 5.5vw;
+  }
+
+  .p-main__roadmap__upper__image {
+    order: 1;
+  }
+
+  .p-main__roadmap__upper__image::after {
+    content: '';
+    display: block;
+    background-image: url(./images/rick-davis-Nd-ptAdv-hY-unsplash.jpg);
+    height: 95%;
+    width: 24.3vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: -10vw;
+  }
+
+  /*
+  .p-main__roadmap__upper {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 30vh;
+    margin-top: 7%;
+  }
+
+  .p-main__roadmap__upper__content {
+    position: relative;
+    order: 0;
+  }
+
+  .p-main__roadmap__1 {
+    position: absolute;
+    top: 3vh;
+  }
+
+  .p-main__roadmap__2 {
+    position: absolute;
+    top: 17.5vh;
+    left: 27vw;
+  }
+
+  .p-main__roadmap__upper__image {
+    background-image: url(./images/rick-davis-Nd-ptAdv-hY-unsplash.jpg);
+    height: 85%;
+    width: 25vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-right: 7.5vw;
+    order: 1;
+  }
+
+  .p-main__roadmap__upper__imageDecos {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 85%;
+    width: 25vw;
+    top: 0;
+    right: 7.5vw;
+    background-color: #ffe600;
+    z-index: -1;
+  }
+  */
+
+  .p-main__roadmap__lower {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    height: 30vh;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .p-main__roadmap__lower__content {
+    position: relative;
+    order: -1;
+  }
+
+  .p-main__roadmap__3 {
+    position: absolute;
+    top: 3vh;
+  }
+
+  .p-main__roadmap__4 {
+    position: absolute;
+    top: 17.5vh;
+    left: 19.5vw;
+  }
+
+  .p-main__roadmap__lower__image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 95%;
+    width: 24.3vw;
+    background-color: #ffe600;
+    z-index: -1;
+    top: 3.15vh;
+    right: 5.5vw;
+  }
+
+  .p-main__roadmap__lower__image {
+    order: 1;
+  }
+
+  .p-main__roadmap__lower__image::after {
+    content: '';
+    display: block;
+    background-image: url(./images/gryffyn-m-v9KRRdTN7rY-unsplash.jpg);
+    height: 95%;
+    width: 24.3vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: -10vw;
+  }
+
+  .c-main__roadmap__content {
+    width: 54.8vw;
+    height: 75%;
+  }
+
+  .c-main__roadmap__content-itself {
+    width: 250px;
+  }
+
+  .c-main__roadmap__content__head {
+    content: '';
+    display: block;
+    height: 5.5vh;
+    width: 100%;
+    border-radius: 1.46vh;
+    background-color: #ffe600;
+    color: #000;
+    text-align: center;
+    font-size: 2.92vh;
+  }
+
+  .c-main__roadmap__content__head > h3 {
+    line-height: 5.5vh;
+  }
+
+  .c-main__roadmap__content__body {
+    content: '';
+    display: block;
+    height: 10.98vh;
+    width: 97.5%;
+    margin: 0 auto;
+    line-height: 1.25vh;
+    padding: 1.46vh 1.46vw;
+    font-size: 1.45rem;
+    text-align: justify;
+  }
+
+  .p-main__aboutUs {
+    height: 22.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .p-main__aboutUs__logo {
+    background-image: url(./images/CINEMETA\ 0113_工作區域\ 1.png);
+    background-position: center;
+    background-size: 135%;
+    width: 24.3vw;
+    height: 80%;
+    margin-top: 3.8%;
+    margin-left: 3%;
+  }
+
+  .p-main__aboutUs__content {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .p-main__aboutUs__head {
+    font-size: 3.75vh;
+    font-weight: 700;
+  }
+
+  .p-main__aboutUs__body1 {
+    font-size: 2vh;
+  }
+
+  .p-main__aboutUs__body2 {
+    font-size: 1vh;
+    line-height: 1.25vh;
+    font-weight: 100;
+    width: 95%;
+    text-align: justify;
+    font-family: sans-serif;
+  }
+
+  .p-main__artist {
+    height: 40vh;
+  }
+
+  .p-main__artist__message {
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 800;
+    padding-top: 15vh;
+  }
+
+  .p-footer__icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    margin-right: 2%;
+  }
+
+  .p-footer__icons__box {
+    width: 45px;
+    background: #000;
+    margin: 0 5px;
+    border-radius: 9px;
+  }
+
+  .p-footer__icons__box::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .p-footer__copyright {
+    color: rgb(202, 202, 202);
+    position: absolute;
+    left: 2%;
+    font-size: 12.5px;
+    bottom: 0.5%;
+  }
+
+  .instagram__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2235px%22%20height%3D%2235px%22%3E%20%3Cpath%20d%3D%22M%208%203%20C%205.243%203%203%205.243%203%208%20L%203%2016%20C%203%2018.757%205.243%2021%208%2021%20L%2016%2021%20C%2018.757%2021%2021%2018.757%2021%2016%20L%2021%208%20C%2021%205.243%2018.757%203%2016%203%20L%208%203%20z%20M%208%205%20L%2016%205%20C%2017.654%205%2019%206.346%2019%208%20L%2019%2016%20C%2019%2017.654%2017.654%2019%2016%2019%20L%208%2019%20C%206.346%2019%205%2017.654%205%2016%20L%205%208%20C%205%206.346%206.346%205%208%205%20z%20M%2017%206%20A%201%201%200%200%200%2016%207%20A%201%201%200%200%200%2017%208%20A%201%201%200%200%200%2018%207%20A%201%201%200%200%200%2017%206%20z%20M%2012%207%20C%209.243%207%207%209.243%207%2012%20C%207%2014.757%209.243%2017%2012%2017%20C%2014.757%2017%2017%2014.757%2017%2012%20C%2017%209.243%2014.757%207%2012%207%20z%20M%2012%209%20C%2013.654%209%2015%2010.346%2015%2012%20C%2015%2013.654%2013.654%2015%2012%2015%20C%2010.346%2015%209%2013.654%209%2012%20C%209%2010.346%2010.346%209%2012%209%20z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
+  }
+
+  .tiktok__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232.5%22%20height%3D%2232.5%22%20viewBox%3D%220%200%20256%20256%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdesc%3ECreated%20with%20Fabric.js%201.7.22%3C%2Fdesc%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cg%20transform%3D%22translate(128%20128)%20scale(0.5%200.5)%22%20style%3D%22%22%3E%20%3Cg%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%200%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20none%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22translate(-255.15%20-255.15000000000006)%20scale(5.67%205.67)%22%20%3E%20%3Cpath%20d%3D%22M%2036.203%2035.438%20v%20-3.51%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-15.047%200%20-27.289%2012.244%20-27.289%2027.291%20c%200%209.23%204.613%2017.401%2011.65%2022.342%20c%20-4.712%20-5.039%20-7.332%20-11.681%20-7.328%20-18.58%20C%209.559%2047.88%2021.453%2035.784%2036.203%2035.438%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2036.847%2075.175%20c%206.714%200%2012.19%20-5.341%2012.44%20-11.997%20l%200.023%20-59.417%20h%2010.855%20c%20-0.232%20-1.241%20-0.349%20-2.5%20-0.35%20-3.762%20H%2044.989%20l%20-0.025%2059.419%20c%20-0.247%206.654%20-5.726%2011.993%20-12.438%2011.993%20c%20-2.015%200.001%20-4%20-0.49%20-5.782%20-1.431%20C%2029.079%2073.238%2032.839%2075.171%2036.847%2075.175%20M%2080.441%2023.93%20v%20-3.302%20c%20-3.989%200.004%20-7.893%20-1.157%20-11.232%20-3.339%20c%202.928%203.371%206.869%205.701%2011.234%206.641%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2069.209%2017.286%20c%20-3.272%20-3.744%20-5.075%20-8.549%20-5.073%20-13.522%20h%20-3.972%20C%2061.203%209.318%2064.472%2014.205%2069.209%2017.286%20M%2032.526%2046.486%20c%20-6.88%200.008%20-12.455%205.583%20-12.463%2012.463%20c%200.004%204.632%202.576%208.88%206.679%2011.032%20c%20-1.533%20-2.114%20-2.358%20-4.657%20-2.358%20-7.268%20c%200.007%20-6.88%205.582%20-12.457%2012.463%20-12.465%20c%201.284%200%202.515%200.212%203.677%200.577%20V%2035.689%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-0.216%200%20-0.429%200.012%20-0.643%200.016%20v%2011.626%20C%2035.014%2046.685%2033.774%2046.49%2032.526%2046.486%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2080.441%2023.93%20v%2011.523%20c%20-7.689%200%20-14.81%20-2.459%20-20.627%20-6.633%20v%2030.13%20c%200%2015.047%20-12.24%2027.289%20-27.287%2027.289%20c%20-5.815%200%20-11.207%20-1.835%20-15.639%20-4.947%20c%205.151%205.555%2012.384%208.711%2019.959%208.709%20c%2015.047%200%2027.289%20-12.242%2027.289%20-27.287%20v%20-30.13%20c%206.009%204.321%2013.226%206.642%2020.627%206.633%20V%2024.387%20c%20-1.484%200%20-2.927%20-0.161%20-4.323%20-0.46%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2059.813%2058.949%20v%20-30.13%20c%206.009%204.322%2013.226%206.642%2020.627%206.633%20V%2023.93%20c%20-4.364%20-0.941%20-8.305%20-3.272%20-11.232%20-6.644%20c%20-4.737%20-3.081%20-8.006%20-7.968%20-9.045%20-13.522%20H%2049.309%20l%20-0.023%2059.417%20c%20-0.249%206.654%20-5.726%2011.995%20-12.44%2011.995%20c%20-4.007%20-0.004%20-7.768%20-1.938%20-10.102%20-5.194%20c%20-4.103%20-2.151%20-6.676%20-6.399%20-6.681%20-11.032%20c%200.008%20-6.88%205.583%20-12.455%2012.463%20-12.463%20c%201.282%200%202.513%200.21%203.677%200.577%20V%2035.438%20C%2021.453%2035.784%209.559%2047.88%209.559%2062.713%20c%200%207.173%202.787%2013.703%207.328%2018.58%20c%204.578%203.223%2010.041%204.95%2015.639%204.945%20C%2047.574%2086.238%2059.813%2073.996%2059.813%2058.949%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C230%2C0)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .discord__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2230px%22%20height%3D%2230px%22%3E%20%3Cpath%20d%3D%22M19.952%2C5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392%2C0.097-0.474%2C0.281%20c-0.006%2C0.012-0.072%2C0.163-0.145%2C0.398c1.259%2C0.212%2C2.806%2C0.64%2C4.206%2C1.509c0.224%2C0.139%2C0.293%2C0.434%2C0.154%2C0.659%20c-0.09%2C0.146-0.247%2C0.226-0.407%2C0.226c-0.086%2C0-0.173-0.023-0.252-0.072C15.584%2C5.38%2C12.578%2C5.305%2C12%2C5.305S8.415%2C5.38%2C6.011%2C6.872%20c-0.225%2C0.14-0.519%2C0.07-0.659-0.154c-0.14-0.225-0.07-0.519%2C0.154-0.659c1.4-0.868%2C2.946-1.297%2C4.206-1.509%20c-0.074-0.236-0.14-0.386-0.145-0.398C9.484%2C3.968%2C9.294%2C3.852%2C9.092%2C3.872c-0.127%2C0.01-3.139%2C0.269-5.069%2C1.822%20C3.015%2C6.625%2C1%2C12.073%2C1%2C16.783c0%2C0.083%2C0.022%2C0.165%2C0.063%2C0.237c1.391%2C2.443%2C5.185%2C3.083%2C6.05%2C3.111c0.005%2C0%2C0.01%2C0%2C0.015%2C0%20c0.153%2C0%2C0.297-0.073%2C0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675%20c0.175-0.198%2C0.476-0.217%2C0.674-0.043c0.029%2C0.026%2C2.248%2C1.909%2C6.612%2C1.909c4.372%2C0%2C6.591-1.891%2C6.613-1.91%20c0.198-0.172%2C0.5-0.154%2C0.674%2C0.045c0.174%2C0.198%2C0.155%2C0.499-0.042%2C0.673c-0.07%2C0.062-1.275%2C1.096-3.634%2C1.706l0.875%2C1.202%20c0.09%2C0.124%2C0.234%2C0.197%2C0.387%2C0.197c0.005%2C0%2C0.01%2C0%2C0.015%2C0c0.865-0.027%2C4.659-0.667%2C6.05-3.111%20C22.978%2C16.947%2C23%2C16.866%2C23%2C16.783C23%2C12.073%2C20.985%2C6.625%2C19.952%2C5.672z%20M8.891%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913s1.674%2C0.857%2C1.674%2C1.913S9.816%2C14.87%2C8.891%2C14.87z%20M15.109%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913c0.924%2C0%2C1.674%2C0.857%2C1.674%2C1.913S16.033%2C14.87%2C15.109%2C14.87z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32.5px 32.5px;
+  }
+
+  .facebook__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%20width%3D%2230px%22%20height%3D%2230px%22%3E%20%3Cpath%20d%3D%22M32%2C11h5c0.552%2C0%2C1-0.448%2C1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484%2C2.153%2C32.376%2C2%2C30.141%2C2C24%2C2%2C20%2C5.68%2C20%2C12.368%20V19h-7c-0.552%2C0-1%2C0.448-1%2C1v7c0%2C0.552%2C0.448%2C1%2C1%2C1h7v19c0%2C0.552%2C0.448%2C1%2C1%2C1h7c0.552%2C0%2C1-0.448%2C1-1V28h7.222%20c0.51%2C0%2C0.938-0.383%2C0.994-0.89l0.778-7C38.06%2C19.518%2C37.596%2C19%2C37%2C19h-8v-5C29%2C12.343%2C30.343%2C11%2C32%2C11z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .p-header {
+    display: block;
+    height: 100px;
+  }
+  .p-header__hero {
+    display: none;
+  }
+
+  .p-header__navs {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 80%;
+    height: 80px;
+  }
+
+  .p-header__navs__nav {
+    order: 1;
+  }
+
+  .p-header__navs__list {
+    display: flex;
+    margin-right: 0;
+    font-size: 12.5px;
+    font-weight: 300;
+  }
+
+  .p-header__navs__logo {
+    padding: 0;
+    background-image: url(./images/CINEMETA\ 0113_工作區域\ 1\ 複本.png);
+    height: 60px;
+    width: 125px;
+    background-size: 120%;
+    background-position: 50% 50%;
+    order: 0;
+  }
+
+  .p-main {
+    padding-top: 100px;
+    z-index: 0;
+  }
+
+  .p-main__mainVisual {
+    background-image: url(./images/noah-morgan-Fs968s8maEQ-unsplash.jpg);
+    height: 27.5vh;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background-position: 0% 85%;
+    background-size: cover;
+    margin-bottom: 10%;
+  }
+
+  .p-main__mainVisual__massage {
+    width: 29.25%;
+    position: absolute;
+    right: 0;
+    bottom: 8%;
+  }
+
+  .p-main__mainVisual__massage > p {
+    position: relative;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  .p-main__mainVisual__massage > p::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 1.5px;
+    height: 100%;
+    background-color: #fff;
+    top: -0.5px;
+    left: -10px;
+    border-radius: 10px;
+  }
+
+  .p-main__roadmap__head {
+    background-image: url(./images/siwi-pratiwi-SyNTSFbiKvg-unsplash.jpg);
+    display: flex;
+    width: 100%;
+    height: 8.5vh;
+    justify-content: space-evenly;
+    background-size: 100%;
+    background-position: 85% 50%;
+    align-items: center;
+  }
+
+  .p-main__roadmap__head__title {
+    font-size: 17.5px;
+  }
+
+  .p-main__roadmap__head__description {
+    font-size: 8px;
+    line-height: 10.25px;
+    text-align: justify;
+    width: 57.5%;
+  }
+
+  .p-main__roadmap__upper {
+    display: block;
+    position: relative;
+    height: 20vh;
+    margin-top: 10%;
+  }
+
+  .p-main__roadmap__upper__content {
+    position: relative;
+    order: -1;
+  }
+
+  .p-main__roadmap__1 {
+    position: absolute;
+    top: 3vh;
+    left: 7vw;
+  }
+
+  .p-main__roadmap__2 {
+    position: absolute;
+    top: 15vh;
+    left: 52.5vw;
+  }
+
+  .p-main__roadmap__upper__image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 95%;
+    width: 24.3vw;
+    background-color: #ffe600;
+    z-index: -1;
+    top: 3.15vh;
+    right: 5.5vw;
+  }
+
+  .p-main__roadmap__upper__image {
+    order: 1;
+    display: none;
+  }
+
+  .p-main__roadmap__upper__image::after {
+    content: '';
+    display: block;
+    background-image: url(./images/rick-davis-Nd-ptAdv-hY-unsplash.jpg);
+    height: 95%;
+    width: 24.3vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: -10vw;
+  }
+
+  /*
+  .p-main__roadmap__upper {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 30vh;
+    margin-top: 7%;
+  }
+
+  .p-main__roadmap__upper__content {
+    position: relative;
+    order: 0;
+  }
+
+  .p-main__roadmap__1 {
+    position: absolute;
+    top: 3vh;
+  }
+
+  .p-main__roadmap__2 {
+    position: absolute;
+    top: 17.5vh;
+    left: 27vw;
+  }
+
+  .p-main__roadmap__upper__image {
+    background-image: url(./images/rick-davis-Nd-ptAdv-hY-unsplash.jpg);
+    height: 85%;
+    width: 25vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-right: 7.5vw;
+    order: 1;
+  }
+
+  .p-main__roadmap__upper__imageDecos {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 85%;
+    width: 25vw;
+    top: 0;
+    right: 7.5vw;
+    background-color: #ffe600;
+    z-index: -1;
+  }
+  */
+
+  .p-main__roadmap__lower {
+    display: block;
+    position: relative;
+    height: 30vh;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+
+  .p-main__roadmap__lower__content {
+    position: relative;
+    order: -1;
+  }
+
+  .p-main__roadmap__3 {
+    position: absolute;
+    top: 5vh;
+    left: 7vw;
+  }
+
+  .p-main__roadmap__4 {
+    position: absolute;
+    top: 17.5vh;
+    left: 52.5vw;
+  }
+
+  .p-main__roadmap__lower__image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 95%;
+    width: 24.3vw;
+    background-color: #ffe600;
+    z-index: -1;
+    top: 3.15vh;
+    right: 5.5vw;
+  }
+
+  .p-main__roadmap__lower__image {
+    order: 1;
+    display: none;
+  }
+
+  .p-main__roadmap__lower__image::after {
+    content: '';
+    display: block;
+    background-image: url(./images/gryffyn-m-v9KRRdTN7rY-unsplash.jpg);
+    height: 95%;
+    width: 24.3vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: -10vw;
+  }
+
+  .p-main__roadmap__smartphone {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 100px;
+  }
+
+  .p-main__road__smartphone__background {
+    background-image: url(./images/DSC07137.jpg);
+    background-size: 150%;
+    background-position: 65% 30%;
+    height: 51.72vh;
+    width: 100%;
+    top: -51.72vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .p-main__road__smartphone__background::after {
+    content: '';
+    display: block;
+    height: 61.57vh;
+    width: 100%;
+    background-color: #19191954;
+  }
+
+  .c-main__roadmap__content {
+    width: 54.8vw;
+    height: 75%;
+  }
+
+  .c-main__roadmap__content-itself {
+    width: 40vw;
+  }
+
+  .c-main__roadmap__content__head {
+    content: '';
+    display: block;
+    height: 7vh;
+    width: 100%;
+    border-radius: 1.25vh;
+    background-color: #ffe600;
+    color: #000;
+    text-align: center;
+    font-size: 2.31vh;
+  }
+
+  .c-main__roadmap__content__head > h3 {
+    line-height: 7vh;
+  }
+
+  .c-main__roadmap__content__body {
+    content: '';
+    display: block;
+    height: 12.3vh;
+    width: 95%;
+    margin: 0 auto;
+    line-height: 1.6vh;
+    padding: 0.75vh 0vw;
+    font-size: 1.23vh;
+    text-align: justify;
+  }
+
+  .p-main__aboutUs {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .p-main__aboutUs__logo {
+    background-image: url(./images/CINEMETA\ 0113_工作區域\ 1\ 複本.png);
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+    width: 80%;
+    height: 18.47vh;
+  }
+
+  .p-main__aboutUs__content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .p-main__aboutUs__head {
+    font-size: 3.08vh;
+    font-weight: 700;
+  }
+
+  .p-main__aboutUs__body1 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.66vh;
+  }
+
+  .p-main__aboutUs__body2 {
+    font-size: 1.47vh;
+    line-height: 1.66vh;
+    font-weight: 100;
+    width: 82.5%;
+    margin: 0 auto;
+    text-align: inherit;
+    font-family: sans-serif;
+  }
+
+  .p-footer {
+    height: 135px;
+    position: relative;
+    background-image: url(./images/noah-morgan-kxkXVlNL7H0-unsplash.jpg);
+    background-size: cover;
+    margin-top: 2.25%;
+  }
+
+  .p-main__artist {
+    height: 20vh;
+  }
+
+  .p-main__artist__message {
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 800;
+    padding-top: 9vh;
+  }
+
+  .p-footer__icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2%;
+    width: 60%;
+    padding-top: 2.5px;
+    margin-left: auto;
+  }
+
+  .p-footer__icons__box {
+    width: 45px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 9px;
+  }
+
+  .p-footer__icons__box::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .p-footer__copyright {
+    color: rgb(202, 202, 202);
+    position: absolute;
+    left: 2%;
+    font-size: 0.2rem;
+    bottom: 0.5%;
+  }
+
+  .p-footer__logo__img {
+    position: absolute;
+    background-image: url(./images/CINEMETA\ 0113_工作區域\ 1.png);
+    width: 90px;
+    height: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: 200%;
+    background-position: 50% 40%;
+  }
+
+  .p-footer__logoImg::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ffe600;
+  }
+
+  .instagram__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2235px%22%20height%3D%2235px%22%3E%20%3Cpath%20d%3D%22M%208%203%20C%205.243%203%203%205.243%203%208%20L%203%2016%20C%203%2018.757%205.243%2021%208%2021%20L%2016%2021%20C%2018.757%2021%2021%2018.757%2021%2016%20L%2021%208%20C%2021%205.243%2018.757%203%2016%203%20L%208%203%20z%20M%208%205%20L%2016%205%20C%2017.654%205%2019%206.346%2019%208%20L%2019%2016%20C%2019%2017.654%2017.654%2019%2016%2019%20L%208%2019%20C%206.346%2019%205%2017.654%205%2016%20L%205%208%20C%205%206.346%206.346%205%208%205%20z%20M%2017%206%20A%201%201%200%200%200%2016%207%20A%201%201%200%200%200%2017%208%20A%201%201%200%200%200%2018%207%20A%201%201%200%200%200%2017%206%20z%20M%2012%207%20C%209.243%207%207%209.243%207%2012%20C%207%2014.757%209.243%2017%2012%2017%20C%2014.757%2017%2017%2014.757%2017%2012%20C%2017%209.243%2014.757%207%2012%207%20z%20M%2012%209%20C%2013.654%209%2015%2010.346%2015%2012%20C%2015%2013.654%2013.654%2015%2012%2015%20C%2010.346%2015%209%2013.654%209%2012%20C%209%2010.346%2010.346%209%2012%209%20z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
+  }
+
+  .tiktok__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232.5%22%20height%3D%2232.5%22%20viewBox%3D%220%200%20256%20256%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdesc%3ECreated%20with%20Fabric.js%201.7.22%3C%2Fdesc%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cg%20transform%3D%22translate(128%20128)%20scale(0.5%200.5)%22%20style%3D%22%22%3E%20%3Cg%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%200%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20none%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22translate(-255.15%20-255.15000000000006)%20scale(5.67%205.67)%22%20%3E%20%3Cpath%20d%3D%22M%2036.203%2035.438%20v%20-3.51%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-15.047%200%20-27.289%2012.244%20-27.289%2027.291%20c%200%209.23%204.613%2017.401%2011.65%2022.342%20c%20-4.712%20-5.039%20-7.332%20-11.681%20-7.328%20-18.58%20C%209.559%2047.88%2021.453%2035.784%2036.203%2035.438%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2036.847%2075.175%20c%206.714%200%2012.19%20-5.341%2012.44%20-11.997%20l%200.023%20-59.417%20h%2010.855%20c%20-0.232%20-1.241%20-0.349%20-2.5%20-0.35%20-3.762%20H%2044.989%20l%20-0.025%2059.419%20c%20-0.247%206.654%20-5.726%2011.993%20-12.438%2011.993%20c%20-2.015%200.001%20-4%20-0.49%20-5.782%20-1.431%20C%2029.079%2073.238%2032.839%2075.171%2036.847%2075.175%20M%2080.441%2023.93%20v%20-3.302%20c%20-3.989%200.004%20-7.893%20-1.157%20-11.232%20-3.339%20c%202.928%203.371%206.869%205.701%2011.234%206.641%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(114%2C114%2C114)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2069.209%2017.286%20c%20-3.272%20-3.744%20-5.075%20-8.549%20-5.073%20-13.522%20h%20-3.972%20C%2061.203%209.318%2064.472%2014.205%2069.209%2017.286%20M%2032.526%2046.486%20c%20-6.88%200.008%20-12.455%205.583%20-12.463%2012.463%20c%200.004%204.632%202.576%208.88%206.679%2011.032%20c%20-1.533%20-2.114%20-2.358%20-4.657%20-2.358%20-7.268%20c%200.007%20-6.88%205.582%20-12.457%2012.463%20-12.465%20c%201.284%200%202.515%200.212%203.677%200.577%20V%2035.689%20c%20-1.218%20-0.173%20-2.447%20-0.262%20-3.677%20-0.268%20c%20-0.216%200%20-0.429%200.012%20-0.643%200.016%20v%2011.626%20C%2035.014%2046.685%2033.774%2046.49%2032.526%2046.486%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2080.441%2023.93%20v%2011.523%20c%20-7.689%200%20-14.81%20-2.459%20-20.627%20-6.633%20v%2030.13%20c%200%2015.047%20-12.24%2027.289%20-27.287%2027.289%20c%20-5.815%200%20-11.207%20-1.835%20-15.639%20-4.947%20c%205.151%205.555%2012.384%208.711%2019.959%208.709%20c%2015.047%200%2027.289%20-12.242%2027.289%20-27.287%20v%20-30.13%20c%206.009%204.321%2013.226%206.642%2020.627%206.633%20V%2024.387%20c%20-1.484%200%20-2.927%20-0.161%20-4.323%20-0.46%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C255%2C255)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%20%3Cpath%20d%3D%22M%2059.813%2058.949%20v%20-30.13%20c%206.009%204.322%2013.226%206.642%2020.627%206.633%20V%2023.93%20c%20-4.364%20-0.941%20-8.305%20-3.272%20-11.232%20-6.644%20c%20-4.737%20-3.081%20-8.006%20-7.968%20-9.045%20-13.522%20H%2049.309%20l%20-0.023%2059.417%20c%20-0.249%206.654%20-5.726%2011.995%20-12.44%2011.995%20c%20-4.007%20-0.004%20-7.768%20-1.938%20-10.102%20-5.194%20c%20-4.103%20-2.151%20-6.676%20-6.399%20-6.681%20-11.032%20c%200.008%20-6.88%205.583%20-12.455%2012.463%20-12.463%20c%201.282%200%202.513%200.21%203.677%200.577%20V%2035.438%20C%2021.453%2035.784%209.559%2047.88%209.559%2062.713%20c%200%207.173%202.787%2013.703%207.328%2018.58%20c%204.578%203.223%2010.041%204.95%2015.639%204.945%20C%2047.574%2086.238%2059.813%2073.996%2059.813%2058.949%22%20style%3D%22stroke%3A%20none%3B%20stroke-width%3A%201%3B%20stroke-dasharray%3A%20none%3B%20stroke-linecap%3A%20butt%3B%20stroke-linejoin%3A%20miter%3B%20stroke-miterlimit%3A%2010%3B%20fill%3A%20rgb(255%2C230%2C0)%3B%20fill-rule%3A%20nonzero%3B%20opacity%3A%201%3B%22%20transform%3D%22%20matrix(1%200%200%201%200%200)%20%22%20stroke-linecap%3D%22round%22%20%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .discord__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2230px%22%20height%3D%2230px%22%3E%20%3Cpath%20d%3D%22M19.952%2C5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392%2C0.097-0.474%2C0.281%20c-0.006%2C0.012-0.072%2C0.163-0.145%2C0.398c1.259%2C0.212%2C2.806%2C0.64%2C4.206%2C1.509c0.224%2C0.139%2C0.293%2C0.434%2C0.154%2C0.659%20c-0.09%2C0.146-0.247%2C0.226-0.407%2C0.226c-0.086%2C0-0.173-0.023-0.252-0.072C15.584%2C5.38%2C12.578%2C5.305%2C12%2C5.305S8.415%2C5.38%2C6.011%2C6.872%20c-0.225%2C0.14-0.519%2C0.07-0.659-0.154c-0.14-0.225-0.07-0.519%2C0.154-0.659c1.4-0.868%2C2.946-1.297%2C4.206-1.509%20c-0.074-0.236-0.14-0.386-0.145-0.398C9.484%2C3.968%2C9.294%2C3.852%2C9.092%2C3.872c-0.127%2C0.01-3.139%2C0.269-5.069%2C1.822%20C3.015%2C6.625%2C1%2C12.073%2C1%2C16.783c0%2C0.083%2C0.022%2C0.165%2C0.063%2C0.237c1.391%2C2.443%2C5.185%2C3.083%2C6.05%2C3.111c0.005%2C0%2C0.01%2C0%2C0.015%2C0%20c0.153%2C0%2C0.297-0.073%2C0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675%20c0.175-0.198%2C0.476-0.217%2C0.674-0.043c0.029%2C0.026%2C2.248%2C1.909%2C6.612%2C1.909c4.372%2C0%2C6.591-1.891%2C6.613-1.91%20c0.198-0.172%2C0.5-0.154%2C0.674%2C0.045c0.174%2C0.198%2C0.155%2C0.499-0.042%2C0.673c-0.07%2C0.062-1.275%2C1.096-3.634%2C1.706l0.875%2C1.202%20c0.09%2C0.124%2C0.234%2C0.197%2C0.387%2C0.197c0.005%2C0%2C0.01%2C0%2C0.015%2C0c0.865-0.027%2C4.659-0.667%2C6.05-3.111%20C22.978%2C16.947%2C23%2C16.866%2C23%2C16.783C23%2C12.073%2C20.985%2C6.625%2C19.952%2C5.672z%20M8.891%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913s1.674%2C0.857%2C1.674%2C1.913S9.816%2C14.87%2C8.891%2C14.87z%20M15.109%2C14.87c-0.924%2C0-1.674-0.857-1.674-1.913%20s0.749-1.913%2C1.674-1.913c0.924%2C0%2C1.674%2C0.857%2C1.674%2C1.913S16.033%2C14.87%2C15.109%2C14.87z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32.5px 32.5px;
+  }
+
+  .facebook__icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20fill%3D%22%23ffe600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%20width%3D%2230px%22%20height%3D%2230px%22%3E%20%3Cpath%20d%3D%22M32%2C11h5c0.552%2C0%2C1-0.448%2C1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484%2C2.153%2C32.376%2C2%2C30.141%2C2C24%2C2%2C20%2C5.68%2C20%2C12.368%20V19h-7c-0.552%2C0-1%2C0.448-1%2C1v7c0%2C0.552%2C0.448%2C1%2C1%2C1h7v19c0%2C0.552%2C0.448%2C1%2C1%2C1h7c0.552%2C0%2C1-0.448%2C1-1V28h7.222%20c0.51%2C0%2C0.938-0.383%2C0.994-0.89l0.778-7C38.06%2C19.518%2C37.596%2C19%2C37%2C19h-8v-5C29%2C12.343%2C30.343%2C11%2C32%2C11z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
+  }
+}
