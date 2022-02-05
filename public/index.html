@@ -12,7 +12,7 @@
 <body>
     <header class="p-header">
         <div class="container">
-            <div class="p-header__wrapp">
+            <div class="p-header__wrapper">
                 <div class="p-header__hero">
                     <h1>Cinemeta.</h1>
                 </div>
@@ -25,9 +25,26 @@
                             <li><a href="#artist">ARTIST</a></li>
                         </ul>
                     </div>
-                    <div class="p-header__navs__logo">
-                        <div></div>
-                    </div>
+                    <label for="menu-btn-check" class="p-header__navs__logo"></label>
+                </div>
+            </div>
+        </div>
+        <div class="hamburgermenu">
+            <input type="checkbox" id="menu-btn-check">
+            <div class="menu-content">
+                <div class="menu-content__inner">
+                    <ul class="menu__nav">
+                        <li class="menu__nav__list"><a href="#roadmap">ROADMAP</a></li>
+                        <li class="menu__nav__list"><a href="#aboutUs">ABOUT US</a></li>
+                        <li class="menu__nav__list"><a href="#artist">ARTIST</a></li>
+                    </ul>
+                    <h4 class="menu-title">Social Media LINKS</h4>
+                    <ul class="sns-logos">
+                        <a href="#"><li class="menu__logo instagram__logo"></li></a>
+                        <a href="#"><li class="menu__logo tiktok__logo"></li></a>
+                        <a href="#"><li class="menu__logo discord__logo"></li></a>
+                        <a href="#"><li class="menu__logo twitter__logo"></li></a>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -84,7 +101,7 @@
                                     <h3>Scene 3</h3>
                                 </div>
                                 <div class="p-main__roadmap__3__body c-main__roadmap__content__body">50% sell out :<br>
-                                    A script contest with a grand prize of $20K worth of our own token will be hosted and given to the 5 winners</div>
+                                    A content with a grand prize will be hosted and given to the 5 winners</div>
                             </div>
                             <div class="p-main__roadmap__4 c-main__roadmap__content-itself">
                                 <div class="p-main__roadmap__4__head c-main__roadmap__content__head">
@@ -94,9 +111,6 @@
                                     Stay tuned.</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-main__roadmap__smartphone">
-                        <div class="p-main__road__smartphone__background"></div>
                     </div>
                 </div>
             </div>
@@ -116,10 +130,13 @@
                 </div>
             </div>
         </div>
-        <div id="artist" class="p-main__artist">
-            <div class="container">
+        <div class="container">
+            <div id="artist" class="p-main__artist">
+                <div class="p-main__artist__title">
+                    <h2>Artist</h2>
+                </div>
                 <div class="p-main__artist__message">
-                    COMING SOON...
+                    <p>COMING SOON...</p>
                 </div>
             </div>
         </div>
@@ -131,14 +148,13 @@
                     <div class="p-footer__logo__img"></div>
                 </div>
                 <div class="p-footer__icons">
-                    <div class="p-footer__icons__box instagram__icon">
-                    </div>
-                    <div class="p-footer__icons__box tiktok__icon"></div>
-                    <div class="p-footer__icons__box discord__icon"></div>
-                    <div class="p-footer__icons__box facebook__icon"></div>
+                    <a href=""><div class="p-footer__icons__box instagram__icon"></div></a>
+                    <a href=""><div class="p-footer__icons__box tiktok__icon"></div></a>
+                    <a href=""><div class="p-footer__icons__box discord__icon"></div></a>
+                    <a href=""><div class="p-footer__icons__box twitter__icon"></div></a>
                 </div>
                 <div class="p-footer__copyright">
-                    <p>©︎cinemeta All Rights Reserved</p>
+                    <p>&copy; cinemeta All Rights Reserved</p>
                 </div>
             </div>
         </div>
